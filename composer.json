@@ -1,0 +1,28 @@
+{
+    "name": "rubix/divorce",
+    "type": "project",
+    "description": "Use the K Nearest Neighbors algorithm to predict the probability of a divorce.",
+    "homepage": "https://github.com/RubixML/Divorce",
+    "license": "MIT",
+    "keywords": [
+        "php", "machine", "learning", "data", "science", "mining", "predictive", "modeling",
+        "ai", "ml", "classification", "k-nearest-neighbors", "divorce", "dataset", "tutorial"
+    ],
+    "authors": [
+        {
+            "name": "Andrew DalPino",
+            "email": "me@andrewdalpino.com",
+            "homepage": "https://andrewdalpino.com",
+            "role": "Lead Engineer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "league/csv": "^9.3",
+        "rubix/ml": "^0.0.17-beta"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
