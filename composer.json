@@ -3,10 +3,11 @@
     "type": "project",
     "description": "Use the K Nearest Neighbors algorithm to predict the probability of a divorce.",
     "homepage": "https://github.com/RubixML/Divorce",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "keywords": [
-        "php", "machine", "learning", "data", "science", "mining", "predictive", "modeling",
-        "ai", "ml", "classification", "k-nearest-neighbors", "divorce", "dataset", "tutorial"
+        "classification", "cross validation", "dataset", "data science", "divorce prediction",
+        "example project", "k nearest neighbors", "knn", "machine learning", "ml", "php",
+        "php ml", "rubix ml", "rubixml", "tutorial"
     ],
     "authors": [
         {
