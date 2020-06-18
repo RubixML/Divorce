@@ -21,7 +21,11 @@ $estimator->train($dataset);
 
 echo 'Making predictions ...' . PHP_EOL;
 
-$predictions = $estimator->predict($testing);
+$predictions = $estimator->predict($testing->randomize());
+
+echo 'Example predictions:' . PHP_EOL;
+
+print_r(array_slice($predictions, 0, 3));
 
 $metric = new Accuracy();
 

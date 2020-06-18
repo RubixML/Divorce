@@ -2,21 +2,16 @@
 Use the [K Nearest Neighbors](https://docs.rubixml.com/en/latest/classifiers/k-nearest-neighbors.html) algorithm to predict who of your friends will stay married or get a divorce based on their answers to a 54 question survey about their partner. Included in this project is a 171 sample human-annotated dataset that we'll use to train the learner.
 
 - **Difficulty**: Easy
-- **Training time**: Seconds
+- **Training time**: Less than a minute
+
+## Installation
+Clone the project locally using [Composer](https://getcomposer.org/):
+```sh
+$ composer create-project rubix/divorce
+```
 
 ## Requirements
 - [PHP](https://php.net) 7.2 or above
-
-## Installation
-Clone the repository locally using [Git](https://git-scm.com/):
-```sh
-$ git clone https://github.com/RubixML/Divorce
-```
-
-Install dependencies using [Composer](https://getcomposer.org/):
-```sh
-$ composer install
-```
 
 ## Tutorial
 

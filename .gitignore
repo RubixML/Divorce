@@ -1,5 +1,6 @@
 /vendor
 composer.lock
 report.json
+*.model
 .vscode
 .vs
