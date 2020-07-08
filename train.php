@@ -17,7 +17,7 @@ $estimator = new KNearestNeighbors(3);
 
 echo 'Training ...' . PHP_EOL;
 
-$estimator->train($dataset);
+$estimator->train($training);
 
 echo 'Making predictions ...' . PHP_EOL;
 
