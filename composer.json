@@ -3,7 +3,7 @@
     "type": "project",
     "description": "Use the K Nearest Neighbors algorithm to predict the probability of a divorce.",
     "homepage": "https://github.com/RubixML/Divorce",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "keywords": [
         "classification", "cross validation", "dataset", "data science", "divorce prediction",
         "example project", "k nearest neighbors", "knn", "machine learning", "ml", "php",
@@ -12,14 +12,13 @@
     "authors": [
         {
             "name": "Andrew DalPino",
-            "email": "me@andrewdalpino.com",
-            "homepage": "https://andrewdalpino.com",
+            "homepage": "https://github.com/andrewdalpino",
             "role": "Lead Engineer"
         }
     ],
     "require": {
         "php": ">=7.2",
-        "rubix/ml": "^0.1.0-rc2"
+        "rubix/ml": "^0.3.0"
     },
     "scripts": {
         "train": "@php train.php"
