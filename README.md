@@ -1,5 +1,5 @@
 # Rubix ML - Divorce Predictor
-Use the [K Nearest Neighbors](https://docs.rubixml.com/en/latest/classifiers/k-nearest-neighbors.html) algorithm to predict who of your friends will stay married or get a divorce based on their answers to a 54 question survey about their partner. Included in this project is a 171 sample human-annotated dataset that we'll use to train the learner.
+Use the [K Nearest Neighbors](https://docs.rubixml.com/classifiers/k-nearest-neighbors.html) algorithm to predict who of your friends will stay married or get a divorce based on their answers to a 54 question survey about their partner. Included in this project is a 171 sample human-annotated dataset that we'll use to train the learner.
 
 - **Difficulty**: Easy
 - **Training time**: Less than a minute
