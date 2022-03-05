@@ -11,6 +11,8 @@ use Rubix\ML\Classifiers\KDNeighbors;
 use Rubix\ML\CrossValidation\Reports\MulticlassBreakdown;
 use Rubix\ML\Persisters\Filesystem;
 
+ini_set('memory_limit', '-1');
+
 $logger = new Screen();
 
 $logger->info('Loading data into memory');

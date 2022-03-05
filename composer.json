@@ -21,7 +21,8 @@
         "rubix/ml": "^1.0"
     },
     "scripts": {
-        "train": "@php train.php"
+        "train": "@php train.php",
+        "simulate": "@php simulate.php"
     },
     "config": {
         "preferred-install": "dist",

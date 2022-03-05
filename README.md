@@ -26,6 +26,7 @@ On the map ...
 ### References
 >- M. K. Yöntem et al. (2019). Divorce Prediction Using Correlation Based Feature Selection and Artificial Neural Networks.
 >- Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+>- T. A. DeWees et al. (2020). Investigation Into the Effects of Using Normal Distribution Theory Methodology for Likert Scale Patient-Reported Outcome Data From Varying Underlying Distributions Including Floor/Ceiling Effect.
 
 ## License
 The code is licensed [MIT](LICENSE) and the tutorial is licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
