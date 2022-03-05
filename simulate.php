@@ -8,7 +8,8 @@ use Rubix\ML\Extractors\NDJSON;
 use Rubix\ML\Datasets\Generators\Agglomerate;
 use Rubix\ML\Datasets\Generators\Blob;
 use Rubix\ML\Classifiers\KDNeighbors;
-use Rubix\ML\CrossValidation\Metrics\Accuracy;
+use Rubix\ML\CrossValidation\Reports\MulticlassBreakdown;
+use Rubix\ML\Persisters\Filesystem;
 
 $logger = new Screen();
 
@@ -45,8 +46,12 @@ $logger->info('Making predictions');
 
 $predictions = $estimator->predict($testing);
 
-$metric = new Accuracy();
+$report = new MulticlassBreakdown();
 
-$score = $metric->score($predictions, $testing->labels());
+$results = $report->generate($predictions, $testing->labels());
 
-$logger->info("Accuracy is $score");
+echo $results;
+
+$results->toJSON()->saveTo(new Filesystem('report.json'));
+
+$logger->info('Report saved to report.json');
