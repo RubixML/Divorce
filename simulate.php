@@ -32,7 +32,7 @@ foreach ($dataset->describeByLabel() as $class => $dist) {
     $blobs[$class] = new Blob($means, $stddevs);
 }
 
-$generator = new Agglomerate($blobs);
+$generator = new Agglomerate($blobs, [0.38, 0.62]);
 
 [$training, $testing] = $generator->generate(10000)->stratifiedSplit(0.8);
 
