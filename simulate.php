@@ -34,6 +34,8 @@ foreach ($dataset->describeByLabel() as $class => $dist) {
 
 $generator = new Agglomerate($blobs, [0.38, 0.62]);
 
+$logger->info('Simulating original dataset');
+
 [$training, $testing] = $generator->generate(10000)->stratifiedSplit(0.8);
 
 $estimator = new KDNeighbors(3);
