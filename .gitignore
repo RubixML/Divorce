@@ -1,6 +1,7 @@
 /vendor
 composer.lock
 report.json
+embedding.csv
 *.model
 .vscode
 .vs

@@ -21,6 +21,7 @@
         "rubix/ml": "^1.0"
     },
     "scripts": {
+        "explore": "@php explore.php",
         "train": "@php train.php",
         "simulate": "@php simulate.php"
     },
