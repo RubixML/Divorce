@@ -11,7 +11,7 @@ $ composer create-project rubix/divorce
 ```
 
 ## Requirements
-- [PHP](https://php.net) 7.2 or above
+- [PHP](https://php.net) 7.4 or above
 
 ## Tutorial
 
