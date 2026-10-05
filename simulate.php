@@ -7,6 +7,7 @@ use Rubix\ML\Datasets\Labeled;
 use Rubix\ML\Extractors\NDJSON;
 use Rubix\ML\Datasets\Generators\Agglomerate;
 use Rubix\ML\Datasets\Generators\Blob;
+use Rubix\ML\Transformers\FloatTypeConverter;
 use Rubix\ML\Classifiers\KDNeighbors;
 use Rubix\ML\CrossValidation\Reports\MulticlassBreakdown;
 use Rubix\ML\Persisters\Filesystem;
@@ -19,9 +20,11 @@ $logger->info('Loading data into memory');
 
 $dataset = Labeled::fromIterator(new NDJSON('dataset.ndjson'));
 
+$dataset->apply(new FloatTypeConverter());
+
 $blobs = [];
 
-foreach ($dataset->describeByLabel() as $class => $dist) {
+foreach ($dataset->describeByClassLabels() as $class => $dist) {
     $means = $stddevs = [];
 
     foreach ($dist as $stats) {
