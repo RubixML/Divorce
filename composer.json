@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "rubix/ml": "dev-master"
+        "php": ">=8.3",
+        "rubix/ml": "^3.0"
     },
     "scripts": {
         "explore": "@php explore.php",
